@@ -1,0 +1,42 @@
+.exploreCard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 16px;
+  margin: 10px auto;
+  padding: 8px 80px;
+}
+.exploreCard__container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.exploreCard__container img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.exploreCard__container > div {
+  display: flex;
+  flex-direction: column;
+}
+.exploreCard__container span:nth-of-type(1) {
+  font-weight: 600;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: rgb(34, 34, 34) !important;
+}
+.exploreCard__container span:nth-of-type(2) {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: rgb(34, 34, 34) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .exploreCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+}
