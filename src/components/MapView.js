@@ -15,10 +15,7 @@ const MapView = () => {
   return (
     <div className='mapView'>
       <ReactMapGL
-        // mapStyle='mapbox://styles/mapbox/dark-v9'
-        mapboxApiAccessToken={
-          'pk.eyJ1Ijoicml0dWRpZ2l0YWwiLCJhIjoiY2tyZnVtazJ6MGhjdjJ1bzBkM3ZtdmljNCJ9.dAUwe6wDH5K9gKUL6YKTVQ'
-        }
+        mapboxApiAccessToken={'process.env.REACT_APP_MAP_API'}
         {...viewport}
         onViewportChange={(nextViewport) => setViewport(nextViewport)}
       >
